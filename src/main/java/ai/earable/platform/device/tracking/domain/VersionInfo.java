@@ -29,8 +29,8 @@ public class VersionInfo extends BaseEntity implements Comparable<VersionInfo> {
     private VersionType type;
     @Column("url")
     private String url;
-    @Column("release_notes")
-    private List<String> releaseNotes;
+    @Column("release_note")
+    private List<String> releaseNote;
     @Column("required")
     private boolean required;
 
