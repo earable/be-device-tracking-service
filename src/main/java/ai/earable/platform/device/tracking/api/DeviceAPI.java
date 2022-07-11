@@ -8,6 +8,7 @@ import ai.earable.platform.device.tracking.model.CreateVersionResponseDTO;
 import ai.earable.platform.device.tracking.model.StoreAppInfoRequestDTO;
 import ai.earable.platform.device.tracking.model.StoreAppInfoResponseDTO;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.ArraySchema;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.ExampleObject;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -63,7 +64,7 @@ public interface DeviceAPI {
     @Operation(operationId = "DTS02")
     @ApiResponses({
             @ApiResponse(responseCode = "200", content =
-            @Content(mediaType = "application/json", schema = @Schema(implementation = CheckVersionResponseDTO.class))
+            @Content(mediaType = "application/json",  array = @ArraySchema(schema = @Schema(implementation = CheckVersionResponseDTO.class)))
             ),
             @ApiResponse(responseCode = "400", content =
             @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorDetails.class),
