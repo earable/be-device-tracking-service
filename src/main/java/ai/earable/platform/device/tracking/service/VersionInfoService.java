@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.util.Comparator;
 import java.util.UUID;
 
 @Service
@@ -41,6 +42,7 @@ public class VersionInfoService {
                     currentVersion.setVersion(checkVersionRequestDTO.getCurrentVersion());
                     return versionInfo.compareTo(currentVersion) > 0;
                 })
+                .sort(Comparator.reverseOrder())
                 .map(versionInfoMapper::mapToDTO);
     }
 }
