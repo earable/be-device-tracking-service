@@ -1,4 +1,4 @@
-package ai.earable.platform.device.tracking.config;
+package ai.earable.platform.abs.config;
 
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;

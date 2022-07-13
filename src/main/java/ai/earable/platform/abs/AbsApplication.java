@@ -4,7 +4,7 @@
  * ==============================================================================
  */
 
-package ai.earable.platform.device.tracking;
+package ai.earable.platform.abs;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.servers.Server;
@@ -17,8 +17,8 @@ import org.springframework.web.reactive.config.EnableWebFlux;
 @SpringBootApplication
 @ComponentScan(basePackages = {"ai.earable.platform"})
 @EnableWebFlux
-public class DeviceApplication {
+public class AbsApplication {
     public static void main(String[] args) {
-        SpringApplication.run(DeviceApplication.class, args);
+        SpringApplication.run(AbsApplication.class, args);
     }
 }

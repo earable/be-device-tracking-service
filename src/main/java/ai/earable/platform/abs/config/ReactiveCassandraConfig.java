@@ -1,4 +1,4 @@
-package ai.earable.platform.device.tracking.config;
+package ai.earable.platform.abs.config;
 
 import lombok.NonNull;
 import org.springframework.beans.factory.annotation.Value;
