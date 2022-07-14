@@ -17,15 +17,13 @@ jobs:
       with:
         repository: earable/be-parent
         path: be-parent
-        token: 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
-        persist-credentials: false
+        token: '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'
     - uses: actions/checkout@v3
       name: Checkout common modules
       with:
         repository: earable/be-common
         path: be-common
-        token: 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
-        persist-credentials: false
+        token: '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'
     - name: Build the Docker image
       run: |
         export APP_NAME="device-tracking-service"
@@ -42,15 +40,13 @@ jobs:
       with:
         repository: earable/be-parent
         path: be-parent
-        token: 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
-        persist-credentials: false
+        token: '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'
     - uses: actions/checkout@v3
       name: Checkout common modules
       with:
         repository: earable/be-common
         path: be-common
-        token: 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
-        persist-credentials: false
+        token: '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'
     - name: Build the Docker image
       run: |
         export APP_NAME="device-tracking-service"
