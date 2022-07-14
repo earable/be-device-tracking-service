@@ -14,12 +14,10 @@ jobs:
     - uses: actions/checkout@v2
     - uses: actions/checkout@v3.0.1
       name: Checkout common modules
-      env:
-        GITHUB_TOKEN: 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
       with:
         repository: earable/be-parent
         path: be-parent
-        # token: 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
+        token: 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
     - uses: actions/checkout@v3
       name: Checkout common modules
       with:
