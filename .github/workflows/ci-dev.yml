@@ -17,13 +17,13 @@ jobs:
       with:
         repository: earable/be-parent
         path: be-parent
-        token: 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
+        token: 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
     - uses: actions/checkout@v3.0.1
       name: Checkout common modules
       with:
         repository: earable/be-common
         path: be-common
-        token: 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
+        token: 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
     - name: Build the Docker image
       run: |
         export APP_NAME="device-tracking-service"
@@ -35,18 +35,18 @@ jobs:
     runs-on: [ self-hosted, linux, x64, earable-backend ]
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/checkout@v3.0.1
+    - uses: actions/checkout@v3
       name: Checkout common modules
       with:
         repository: earable/be-parent
         path: be-parent
-        token: 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
-    - uses: actions/checkout@v3.0.1
+        token: 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
+    - uses: actions/checkout@v3
       name: Checkout common modules
       with:
         repository: earable/be-common
         path: be-common
-        token: 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
+        token: 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
     - name: Build the Docker image
       run: |
         export APP_NAME="device-tracking-service"
