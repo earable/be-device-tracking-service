@@ -12,13 +12,13 @@ jobs:
     runs-on: [ self-hosted, linux, x64, earable-backend ]
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v2
       name: Checkout common modules
       with:
         repository: earable/be-parent
         path: be-parent
         token: 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
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v2
       name: Checkout common modules
       with:
         repository: earable/be-common
@@ -35,13 +35,13 @@ jobs:
     runs-on: [ self-hosted, linux, x64, earable-backend ]
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v2
       name: Checkout common modules
       with:
         repository: earable/be-parent
         path: be-parent
         token: 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
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v2
       name: Checkout common modules
       with:
         repository: earable/be-common
