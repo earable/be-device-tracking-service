@@ -40,22 +40,12 @@ public interface DeviceAPI {
             @ApiResponse(responseCode = "400", content =
             @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorDetails.class),
                     examples = {
-                            @ExampleObject(name = "APP_ID_REQUIRED", ref = "/swagger/components/examples/AppIdRequired.json")
+                            @ExampleObject(name = "INPUT_INVALID")
                     })
             ),
-            @ApiResponse(responseCode = "405", content =
+            @ApiResponse(responseCode = "500", content =
             @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorDetails.class),
-                    examples = @ExampleObject(name = "METHOD_NOT_ALLOWED", ref = "/swagger/components/examples/MethodNotAllowed" +
-                            ".json"))
-            ),
-            @ApiResponse(responseCode = "406", content =
-            @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorDetails.class),
-                    examples = @ExampleObject(name = "NOT_ACCEPTABLE", ref = "/swagger/components/examples/NotAcceptable.json"))
-            ),
-            @ApiResponse(responseCode = "415", content =
-            @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorDetails.class),
-                    examples = @ExampleObject(name = "UNSUPPORTED_MEDIA_TYPE", ref = "/swagger/components/examples" +
-                            "/UnsupportedMediaType.json"))
+                    examples = @ExampleObject(name = "INTERNAL_SERVER_ERROR"))
             )
     })
     @PutMapping(path = STORE_APP_INFO, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
@@ -69,22 +59,12 @@ public interface DeviceAPI {
             @ApiResponse(responseCode = "400", content =
             @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorDetails.class),
                     examples = {
-                            @ExampleObject(name = "APP_ID_REQUIRED", ref = "/swagger/components/examples/AppIdRequired.json")
+                            @ExampleObject(name = "INPUT_INVALID")
                     })
             ),
-            @ApiResponse(responseCode = "405", content =
+            @ApiResponse(responseCode = "500", content =
             @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorDetails.class),
-                    examples = @ExampleObject(name = "METHOD_NOT_ALLOWED", ref = "/swagger/components/examples/MethodNotAllowed" +
-                            ".json"))
-            ),
-            @ApiResponse(responseCode = "406", content =
-            @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorDetails.class),
-                    examples = @ExampleObject(name = "NOT_ACCEPTABLE", ref = "/swagger/components/examples/NotAcceptable.json"))
-            ),
-            @ApiResponse(responseCode = "415", content =
-            @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorDetails.class),
-                    examples = @ExampleObject(name = "UNSUPPORTED_MEDIA_TYPE", ref = "/swagger/components/examples" +
-                            "/UnsupportedMediaType.json"))
+                    examples = @ExampleObject(name = "INTERNAL_SERVER_ERROR"))
             )
     })
     @PutMapping(path = VERSION_INFO, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
@@ -98,22 +78,12 @@ public interface DeviceAPI {
             @ApiResponse(responseCode = "400", content =
             @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorDetails.class),
                     examples = {
-                            @ExampleObject(name = "APP_ID_REQUIRED", ref = "/swagger/components/examples/AppIdRequired.json")
+                            @ExampleObject(name = "INPUT_INVALID")
                     })
             ),
-            @ApiResponse(responseCode = "405", content =
+            @ApiResponse(responseCode = "500", content =
             @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorDetails.class),
-                    examples = @ExampleObject(name = "METHOD_NOT_ALLOWED", ref = "/swagger/components/examples/MethodNotAllowed" +
-                            ".json"))
-            ),
-            @ApiResponse(responseCode = "406", content =
-            @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorDetails.class),
-                    examples = @ExampleObject(name = "NOT_ACCEPTABLE", ref = "/swagger/components/examples/NotAcceptable.json"))
-            ),
-            @ApiResponse(responseCode = "415", content =
-            @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorDetails.class),
-                    examples = @ExampleObject(name = "UNSUPPORTED_MEDIA_TYPE", ref = "/swagger/components/examples" +
-                            "/UnsupportedMediaType.json"))
+                    examples = @ExampleObject(name = "INTERNAL_SERVER_ERROR"))
             )
     })
     @PostMapping(path = VERSION_INFO, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
